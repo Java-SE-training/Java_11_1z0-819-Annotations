@@ -5,8 +5,8 @@ package practice.models;
  * @Author Elimane on 24/05/2022
  */
 public class Person {
-  private Long id;
-  private String name;
+  protected  Long id;
+  protected  String name;
 
   public Person() {
   }
@@ -20,11 +20,8 @@ public class Person {
     return "Hi, I am " + this.name;
   }
 
-  @Override
-  public String toString() {
-    return "Person{" +
-      "id=" + id +
-      ", name='" + name + '\'' +
-      '}';
+
+  public String details() {
+    return String.format("[%d] %s", this.id, this.name);
   }
 }

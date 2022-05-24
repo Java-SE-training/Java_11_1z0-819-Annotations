@@ -11,4 +11,9 @@ public class Engineer extends Person{
   public Engineer(Long id, String name) {
     super(id, name);
   }
+
+  @Override
+  public String details() {
+    return String.format("[Engineer #%d] %s", this.id, this.name);
+  }
 }
