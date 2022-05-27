@@ -24,4 +24,13 @@ public class Person {
   public String details() {
     return String.format("[%d] %s", this.id, this.name);
   }
+  @Deprecated
+  public String detailsV2() {
+    return String.format("[Person #%d] %s", this.id, this.name);
+  }
+
+  public String detailsV3() {
+    return String.format("[Person #%d] %s", this.id, this.name);
+  }
+
 }

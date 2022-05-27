@@ -11,5 +11,6 @@ public class Main {
   public static void main(String[] args) {
       Person engineer = new Engineer(1L, "Eric Johnson");
     System.out.println(engineer.details());
+    System.out.println(engineer.detailsV2());
   }
 }
