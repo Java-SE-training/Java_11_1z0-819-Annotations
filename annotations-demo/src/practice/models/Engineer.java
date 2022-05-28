@@ -1,9 +1,12 @@
 package practice.models;
 
+import practice.annotations.Version;
+
 /**
  * @PROJECT annotations-demo
  * @Author Elimane on 24/05/2022
  */
+@Version(author = "John", environments = {"e1","e2"})
 public class Engineer extends Person{
   public Engineer() {
   }
