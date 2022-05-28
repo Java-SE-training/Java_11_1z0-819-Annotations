@@ -1,9 +1,12 @@
 package practice.models;
 
+import practice.annotations.Environment;
+
 /**
  * @PROJECT annotations-demo
  * @Author Elimane on 24/05/2022
  */
+@Environment("staging")
 public class Person {
   protected  Long id;
   protected  String name;
