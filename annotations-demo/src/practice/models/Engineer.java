@@ -1,5 +1,6 @@
 package practice.models;
 
+import lombok.NonNull;
 import lombok.ToString;
 import practice.annotations.Version;
 
@@ -14,6 +15,14 @@ public class Engineer extends Person{
 
   //@Version(1) Not working
   private String departement;
+
+  public String getDepartement() {
+    return departement;
+  }
+
+  public void setDepartement(@NonNull String departement) {
+    this.departement = departement;
+  }
 
   @Version(2)
   public Engineer() {

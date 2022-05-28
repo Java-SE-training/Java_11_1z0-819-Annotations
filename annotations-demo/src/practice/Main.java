@@ -21,6 +21,13 @@ public class Main {
     System.out.println(engineer.detailsV2());
     System.out.println(engineer);
 
+    Engineer engineer2 = new Engineer(1L, "Scott Tiger");
+
+    if(getDept() != null)
+    engineer2.setDepartement(getDept());
+
+    System.out.println(engineer2);
+
     var annotations = engineer.getClass().getAnnotations();
     System.out.println(annotations.length + " annotation(s) found");
 
@@ -50,5 +57,10 @@ public class Main {
       System.out.println("\n Engineer doesn't have Environment annotation");
     }
 
+  }
+
+  private static String getDept(){
+    String value = "";
+    return value;
   }
 }
