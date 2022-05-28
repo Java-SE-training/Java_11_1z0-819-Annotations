@@ -1,5 +1,6 @@
 package practice.models;
 
+import lombok.ToString;
 import practice.annotations.Version;
 
 /**
@@ -8,6 +9,7 @@ import practice.annotations.Version;
  */
 @Version(value = 1,author = "John", environments = {"e1","e2"})
 @Version(value = 2,author = "Scott", environments = {"e1","e2"})
+@ToString
 public class Engineer extends Person{
 
   //@Version(1) Not working
