@@ -1,9 +1,6 @@
 package practice.annotations;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 /**
  * @PROJECT annotations-demo
@@ -11,6 +8,7 @@ import java.lang.annotation.Target;
  */
 @Target({ElementType.CONSTRUCTOR, ElementType.METHOD, ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME) // To make "Version" annotation taken into account by compiler during runtime
+@Repeatable(Versions.class) //To enable annotations repetition
 //@Retention(RetentionPolicy.SOURCE) // To make "Version" annotation ignored by compiler during runtime
 public @interface Version {
   //Fields as a method
