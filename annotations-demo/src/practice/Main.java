@@ -13,5 +13,9 @@ public class Main {
       Person engineer = new Engineer(1L, "Eric Johnson");
     System.out.println(engineer.details());
     System.out.println(engineer.detailsV2());
+
+    var annotations = engineer.getClass().getAnnotations();
+    System.out.println(annotations.length);
+
   }
 }
